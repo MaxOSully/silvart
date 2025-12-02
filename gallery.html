@@ -59,90 +59,389 @@
         </div>
       </section>
 
-      <!-- Main gallery grid; add or remove items as needed -->
       <section class="section section--light">
-        <div class="container">
-          <div class="gallery-grid">
-            <!-- Copy/paste this whole figure block for more works.
-                 Update the src, alt, title, size, and medium. -->
-            <figure class="gallery-item">
-              <img
-                src="images/artwork1.jpg"
-                alt="Artwork title one – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title One</div>
-                <div class="gallery-item__meta">
-                  Mixed media on paper · 30 × 40 cm · 2024
-                </div>
-              </figcaption>
-            </figure>
+        <div class="container" data-gallery-wrapper>
+          <!-- Gallery menu – pick a medium to reveal its works -->
+          <div class="gallery-menu" id="galleryMenu" data-gallery-menu>
+            <p class="eyebrow">Explore by medium</p>
+            <h2>Choose a collection</h2>
+            <p class="gallery-menu__intro">
+              Select a medium to reveal sample works. Replace the placeholder
+              titles and images inside each section with your own artwork.
+            </p>
+            <div class="gallery-menu__grid" role="list">
+              <button
+                type="button"
+                class="gallery-menu__card"
+                data-gallery-target="etchings"
+              >
+                <span class="gallery-menu__label">Etchings with watercolour</span>
+                <span class="gallery-menu__hint"
+                  >Layered lines finished with translucent washes.</span
+                >
+              </button>
 
-            <figure class="gallery-item">
-              <img
-                src="images/artwork2.jpg"
-                alt="Artwork title two – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title Two</div>
-                <div class="gallery-item__meta">
-                  Acrylic on panel · 40 × 40 cm · 2023
-                </div>
-              </figcaption>
-            </figure>
+              <button
+                type="button"
+                class="gallery-menu__card"
+                data-gallery-target="lithographs"
+              >
+                <span class="gallery-menu__label">Lithographs</span>
+                <span class="gallery-menu__hint"
+                  >Stone prints celebrating gesture and rhythm.</span
+                >
+              </button>
 
-            <figure class="gallery-item">
-              <img
-                src="images/artwork3.jpg"
-                alt="Artwork title three – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title Three</div>
-                <div class="gallery-item__meta">
-                  Ink and graphite on paper · 21 × 29.7 cm · 2023
-                </div>
-              </figcaption>
-            </figure>
+              <button
+                type="button"
+                class="gallery-menu__card"
+                data-gallery-target="ceramics"
+              >
+                <span class="gallery-menu__label">Ceramics</span>
+                <span class="gallery-menu__hint"
+                  >Hand-built forms inspired by coastal textures.</span
+                >
+              </button>
 
-            <figure class="gallery-item">
-              <img
-                src="images/artwork4.jpg"
-                alt="Artwork title four – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title Four</div>
-                <div class="gallery-item__meta">
-                  Collage on canvas · 50 × 60 cm · 2022
-                </div>
-              </figcaption>
-            </figure>
+              <button
+                type="button"
+                class="gallery-menu__card"
+                data-gallery-target="sculptures"
+              >
+                <span class="gallery-menu__label">Sculptures in bronze &amp; wood</span>
+                <span class="gallery-menu__hint"
+                  >Intimate studies of motion and stillness.</span
+                >
+              </button>
 
-            <figure class="gallery-item">
-              <img
-                src="images/artwork5.jpg"
-                alt="Artwork title five – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title Five</div>
-                <div class="gallery-item__meta">
-                  Oil on linen · 60 × 80 cm · 2022
-                </div>
-              </figcaption>
-            </figure>
-
-            <figure class="gallery-item">
-              <img
-                src="images/artwork6.jpg"
-                alt="Artwork title six – describe the piece briefly"
-              />
-              <figcaption>
-                <div class="gallery-item__title">Artwork Title Six</div>
-                <div class="gallery-item__meta">
-                  Mixed media on board · 30 × 30 cm · 2021
-                </div>
-              </figcaption>
-            </figure>
+              <button
+                type="button"
+                class="gallery-menu__card"
+                data-gallery-target="oils"
+              >
+                <span class="gallery-menu__label">Oils</span>
+                <span class="gallery-menu__hint"
+                  >Large-scale canvases with luminous palettes.</span
+                >
+              </button>
+            </div>
           </div>
+
+          <!-- Each gallery-section is toggled via the menu above.
+               Keep the structure and update the placeholder data as needed. -->
+          <section
+            class="gallery-section is-hidden"
+            id="etchings"
+            data-gallery-section="etchings"
+            aria-hidden="true"
+          >
+            <div class="gallery-section__header">
+              <div>
+                <p class="eyebrow">Works · Etchings with watercolour</p>
+                <h2>Etchings with watercolour</h2>
+                <p>
+                  Intaglio prints combined with transparent washes. Replace the
+                  filenames and details below with your own pieces.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button ghost back-to-menu"
+                data-gallery-back
+              >
+                Back to categories
+              </button>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/art/etching-watercolour-01.jpg"
+                  alt="Etching with watercolour placeholder 1"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Woven Current I</div>
+                  <div class="gallery-item__meta">
+                    Etching with watercolour · 30 × 40 cm · 2024
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/etching-watercolour-02.jpg"
+                  alt="Etching with watercolour placeholder 2"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Harbor Notes</div>
+                  <div class="gallery-item__meta">
+                    Etching with watercolour · 28 × 35 cm · 2023
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/etching-watercolour-03.jpg"
+                  alt="Etching with watercolour placeholder 3"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Night Map</div>
+                  <div class="gallery-item__meta">
+                    Etching with watercolour · 25 × 32 cm · 2022
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section
+            class="gallery-section is-hidden"
+            id="lithographs"
+            data-gallery-section="lithographs"
+            aria-hidden="true"
+          >
+            <div class="gallery-section__header">
+              <div>
+                <p class="eyebrow">Works · Lithographs</p>
+                <h2>Lithographs</h2>
+                <p>
+                  Stone and plate prints with soft gradients and bold silhouettes.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button ghost back-to-menu"
+                data-gallery-back
+              >
+                Back to categories
+              </button>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/art/lithograph-01.jpg"
+                  alt="Lithograph placeholder 1"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Desert Chorus</div>
+                  <div class="gallery-item__meta">
+                    Lithograph · 40 × 50 cm · 2024
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/lithograph-02.jpg"
+                  alt="Lithograph placeholder 2"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Orbit Study</div>
+                  <div class="gallery-item__meta">
+                    Lithograph · 35 × 45 cm · 2023
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/lithograph-03.jpg"
+                  alt="Lithograph placeholder 3"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Soft Echo</div>
+                  <div class="gallery-item__meta">
+                    Lithograph · 32 × 42 cm · 2022
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section
+            class="gallery-section is-hidden"
+            id="ceramics"
+            data-gallery-section="ceramics"
+            aria-hidden="true"
+          >
+            <div class="gallery-section__header">
+              <div>
+                <p class="eyebrow">Works · Ceramics</p>
+                <h2>Ceramics</h2>
+                <p>
+                  Hand-built vessels and sculptural forms inspired by tide pools
+                  and botanicals.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button ghost back-to-menu"
+                data-gallery-back
+              >
+                Back to categories
+              </button>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/art/ceramic-01.jpg"
+                  alt="Ceramic placeholder 1"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Tide Vessel</div>
+                  <div class="gallery-item__meta">
+                    Stoneware with slip · 20 × 18 cm · 2024
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/ceramic-02.jpg"
+                  alt="Ceramic placeholder 2"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Blooming Form</div>
+                  <div class="gallery-item__meta">
+                    Earthenware · 24 × 15 cm · 2023
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/ceramic-03.jpg"
+                  alt="Ceramic placeholder 3"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Sea Stack</div>
+                  <div class="gallery-item__meta">
+                    Porcelain · 26 × 12 cm · 2022
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section
+            class="gallery-section is-hidden"
+            id="sculptures"
+            data-gallery-section="sculptures"
+            aria-hidden="true"
+          >
+            <div class="gallery-section__header">
+              <div>
+                <p class="eyebrow">Works · Sculptures</p>
+                <h2>Sculptures in bronze &amp; wood</h2>
+                <p>
+                  Small-scale studies of balance. Swap the placeholders with your
+                  own bronze or carved works.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button ghost back-to-menu"
+                data-gallery-back
+              >
+                Back to categories
+              </button>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/art/sculpture-01.jpg"
+                  alt="Sculpture placeholder 1"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Folding Figure</div>
+                  <div class="gallery-item__meta">
+                    Bronze · 15 × 10 × 8 cm · 2024
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/sculpture-02.jpg"
+                  alt="Sculpture placeholder 2"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Still Wave</div>
+                  <div class="gallery-item__meta">
+                    Carved walnut · 22 × 12 × 8 cm · 2023
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/sculpture-03.jpg"
+                  alt="Sculpture placeholder 3"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Anchor</div>
+                  <div class="gallery-item__meta">
+                    Bronze with patina · 18 × 11 × 9 cm · 2022
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section
+            class="gallery-section is-hidden"
+            id="oils"
+            data-gallery-section="oils"
+            aria-hidden="true"
+          >
+            <div class="gallery-section__header">
+              <div>
+                <p class="eyebrow">Works · Oil paintings</p>
+                <h2>Oil paintings</h2>
+                <p>
+                  Richly layered canvases exploring light, architecture, and
+                  memory.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="button ghost back-to-menu"
+                data-gallery-back
+              >
+                Back to categories
+              </button>
+            </div>
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img
+                  src="images/art/oil-01.jpg"
+                  alt="Oil painting placeholder 1"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Midnight Bloom</div>
+                  <div class="gallery-item__meta">
+                    Oil on linen · 80 × 100 cm · 2024
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/oil-02.jpg"
+                  alt="Oil painting placeholder 2"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Skyline Drift</div>
+                  <div class="gallery-item__meta">
+                    Oil on canvas · 70 × 90 cm · 2023
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  src="images/art/oil-03.jpg"
+                  alt="Oil painting placeholder 3"
+                />
+                <figcaption>
+                  <div class="gallery-item__title">Field Notes</div>
+                  <div class="gallery-item__meta">
+                    Oil on canvas · 60 × 80 cm · 2022
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
         </div>
       </section>
     </main>
