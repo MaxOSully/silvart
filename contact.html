@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Silvart Studio · Contact</title>
+    <meta
+      name="description"
+      content="Contact Silvart for artwork inquiries, commissions, and exhibition opportunities."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="site-title">Silvart Studio</a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="is-active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero--subpage">
+        <div class="container">
+          <header class="section-heading">
+            <h1>Contact &amp; info</h1>
+            <p>
+              For available works, commissions, collaborations, or exhibition
+              opportunities, please use the details below.
+            </p>
+          </header>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-column two-column--stack">
+          <div class="body-copy">
+            <h2>Direct contact</h2>
+            <p>
+              <!-- Replace the email address with your own -->
+              Email:
+              <a href="mailto:hello@silvart.com">hello@silvart.com</a>
+            </p>
+            <p>
+              <!-- Optional secondary contact method -->
+              Instagram:
+              <a href="https://instagram.com/" target="_blank" rel="noreferrer"
+                >@yourhandle</a
+              >
+            </p>
+            <p>
+              Please include the title of the work you’re interested in (or a
+              screenshot) and your location so we can estimate shipping.
+            </p>
+          </div>
+
+          <div class="body-copy">
+            <!-- Simple, static contact form – this will submit via email client or can be wired to a service like Formspree -->
+            <h2>Contact form</h2>
+            <!--
+              By default this uses a mailto: action which opens the visitor's email client.
+              For a more robust solution, replace the action with a service like Formspree or your own backend endpoint.
+            -->
+            <form
+              class="contact-form"
+              action="mailto:hello@silvart.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit" class="button primary">
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Silvart Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
