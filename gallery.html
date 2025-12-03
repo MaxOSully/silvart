@@ -176,7 +176,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/water/Submarino(Alto).jpg"
+                  src="images/art/water/SubmarinoAlto.jpg"
                   alt="Submarino (Alto)"
                 />
                 <figcaption>
@@ -286,7 +286,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/water/A La Carga.jpg"
+                  src="images/art/water/ALaCarga.jpg"
                   alt="A la Carga"
                 />
                 <figcaption>
@@ -343,7 +343,7 @@
               <!-- Lithographs – using works from images/art/lithograph -->
               <figure class="gallery-item">
                 <img
-                  src="images/art/lithograph/Arca de Noe.jpg"
+                  src="images/art/lithograph/ArcadeNoe.jpg"
                   alt="Arca de Noé"
                 />
                 <figcaption>
@@ -373,7 +373,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/lithograph/Exposicion en el parque.jpg"
+                  src="images/art/lithograph/ExposicionEnElparque.jpg"
                   alt="Exposición en el parque"
                 />
                 <figcaption>
@@ -403,7 +403,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/lithograph/Galeria Arte(agotada).jpg"
+                  src="images/art/lithograph/GaleriaArteAgotada.jpg"
                   alt="Galería Arte (agotada)"
                 />
                 <figcaption>
@@ -413,7 +413,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/lithograph/Girasoles(agotado).jpg"
+                  src="images/art/lithograph/GirasolesAgotado.jpg"
                   alt="Girasoles (agotado)"
                 />
                 <figcaption>
@@ -423,7 +423,7 @@
               </figure>
               <figure class="gallery-item">
                 <img
-                  src="images/art/lithograph/Lady Godiva.jpg"
+                  src="images/art/lithograph/LadyGodiva.jpg"
                   alt="Lady Godiva"
                 />
                 <figcaption>
@@ -549,6 +549,20 @@
         <p>&copy; <span id="year"></span> Silvart. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Lightbox modal for enlarged artwork viewing -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox__close" aria-label="Close lightbox" id="lightbox-close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="lightbox__content">
+        <img class="lightbox__image" id="lightbox-image" src="" alt="" />
+        <div class="lightbox__caption">
+          <div class="lightbox__title" id="lightbox-title"></div>
+          <div class="lightbox__meta" id="lightbox-meta"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
